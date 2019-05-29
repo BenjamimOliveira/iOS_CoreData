@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cidade" representedClassName="Cidade" syncable="YES" codeGenerationType="class">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="populacao" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="temPais" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pais" inverseName="temCidade" inverseEntity="Pais" syncable="YES"/>
+    </entity>
+    <entity name="Pais" representedClassName="Pais" syncable="YES" codeGenerationType="class">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="populacao" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="temCidade" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cidade" inverseName="temPais" inverseEntity="Cidade" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Pais" positionX="-45" positionY="0" width="128" height="90"/>
+        <element name="Cidade" positionX="-18" positionY="27" width="128" height="90"/>
+    </elements>
 </model>
