@@ -27,10 +27,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-uH-Rxx">
                                 <rect key="frame" x="18" y="85" width="65" height="30"/>
                                 <state key="normal" title="Adicionar"/>
+                                <connections>
+                                    <action selector="adicionarPais:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bJ-vk-7RQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxM-BX-3LI">
                                 <rect key="frame" x="117" y="85" width="61" height="30"/>
                                 <state key="normal" title="Remover"/>
+                                <connections>
+                                    <action selector="removerPais:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vl0-6x-uSd"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adicionar cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="77L-iv-aR6">
                                 <rect key="frame" x="18" y="137" width="339" height="30"/>
@@ -47,10 +53,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMg-Ru-PLu">
                                 <rect key="frame" x="18" y="233" width="65" height="30"/>
                                 <state key="normal" title="Adicionar"/>
+                                <connections>
+                                    <action selector="adicionarCidade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c79-g0-xvF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBA-A7-ogV">
                                 <rect key="frame" x="18" y="295" width="100" height="30"/>
                                 <state key="normal" title="Pais da cidade"/>
+                                <connections>
+                                    <action selector="bPaisCidade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRx-YY-BB2"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTA-Od-WAB">
                                 <rect key="frame" x="126" y="295" width="231" height="30"/>
@@ -67,6 +79,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VY-VK-mgn">
                                 <rect key="frame" x="18" y="379" width="110" height="30"/>
                                 <state key="normal" title="Cidades do pais"/>
+                                <connections>
+                                    <action selector="bCidadePais:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDv-sJ-JLm"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qmo-Ob-Mtt">
                                 <rect key="frame" x="139" y="379" width="218" height="30"/>
@@ -83,6 +98,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVl-av-er0">
                                 <rect key="frame" x="18" y="474" width="60" height="30"/>
                                 <state key="normal" title="Atualizar"/>
+                                <connections>
+                                    <action selector="atualizar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMw-YV-uEP"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Novo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klX-Vj-9vG">
                                 <rect key="frame" x="192" y="474" width="120" height="30"/>
@@ -96,10 +114,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzc-2P-dtn">
                                 <rect key="frame" x="18" y="529" width="110" height="30"/>
                                 <state key="normal" title="Todos os paises"/>
+                                <connections>
+                                    <action selector="todosPaises:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BqW-0g-lCZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdk-bN-X5T">
                                 <rect key="frame" x="213" y="529" width="119" height="30"/>
                                 <state key="normal" title="Todas as cidades"/>
+                                <connections>
+                                    <action selector="todasCidades:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZnQ-8n-xYp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pir-dN-mH6">
                                 <rect key="frame" x="18" y="579" width="42" height="21"/>
@@ -163,6 +187,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="addCidade" destination="77L-iv-aR6" id="Dsn-36-tvR"/>
+                        <outlet property="addPais" destination="uEv-ct-jHR" id="1ze-3F-LWW"/>
+                        <outlet property="cidade" destination="hTA-Od-WAB" id="jWI-K5-Jfi"/>
+                        <outlet property="cidadePais" destination="Qmo-Ob-Mtt" id="fgf-Pc-bKr"/>
+                        <outlet property="especPais" destination="Lbe-QG-Pee" id="LY8-LC-2rS"/>
+                        <outlet property="final" destination="pir-dN-mH6" id="G1Y-Ah-iWC"/>
+                        <outlet property="pais" destination="Qmo-Ob-Mtt" id="exG-QM-hT4"/>
+                        <outlet property="paisAntigo" destination="wjG-zA-qle" id="XRm-5e-79X"/>
+                        <outlet property="paisCidade" destination="tdb-vv-H89" id="Kbw-NQ-ava"/>
+                        <outlet property="paisNovo" destination="klX-Vj-9vG" id="FBV-uf-fEz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
